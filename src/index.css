@@ -1,0 +1,29 @@
+@import "tailwindcss/base";
+@import "./assets/styles/custom-base.css";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root,
+.root,
+#root,
+#docs-root {
+  --primary-color: #0F4D95;
+  --primary-light-color: #1681da;
+  --primary-dark-color: #1915bf;
+  --secondary-color: #9f9f9f;
+  --textfirst-color: #110f50;
+  --hr-color: #ebedf0;
+  --bg-color: #eff1f4;
+  --red-color: #ce3d3d;
+  --green-color: #4EA85C;
+  --orange-color: #f09a34;
+  --highlight-color: #f0f8ff;
+
+  --header-height: 40px;
+}
+
+@layer components {
+  .btn--primary {
+    @apply bg-gradient-to-r from-primary-light to-primary-dark text-white px-4 py-1 rounded hover:text-white;
+  }
+}

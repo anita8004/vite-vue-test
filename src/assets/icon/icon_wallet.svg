@@ -1,0 +1,8 @@
+<svg id="icon_wallet" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Rectangle_2210" data-name="Rectangle 2210" width="24" height="24" fill="none"/>
+  <g id="Group_4695" data-name="Group 4695" transform="translate(-398.727 -278.241)">
+    <g id="Group_4694" data-name="Group 4694">
+      <path id="Path_4485" data-name="Path 4485" d="M418.977,287.381h-.68v-2.56a1.329,1.329,0,0,0-1.33-1.33h-13.9a1.338,1.338,0,0,0-1.34,1.33V295.6a1.34,1.34,0,0,0,1.34,1.34h13.9a1.332,1.332,0,0,0,1.33-1.34v-2.55h.68a.749.749,0,0,0,.75-.75v-4.17A.743.743,0,0,0,418.977,287.381Zm-.75,4.17h-3.25a1.335,1.335,0,0,1,0-2.67h3.25Zm-1.43,3.89h-13.57v-10.45H416.8v2.39h-1.82a2.835,2.835,0,0,0,0,5.67h1.82Z" fill="#191ac0"/>
+    </g>
+  </g>
+</svg>
