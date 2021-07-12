@@ -1,5 +1,5 @@
 # Vite app
-This project use vite, vue3, typescript, tailwind, postcss, prettier, eslint
+This project use vite, vue3, typescript, prettier, vuex4, vuetify3
 
 ## Update
 
