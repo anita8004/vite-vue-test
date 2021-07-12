@@ -6,9 +6,7 @@ header
         router-link(to="/home") Game
 </template>
 
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <style lang="postcss" scoped>
 header {

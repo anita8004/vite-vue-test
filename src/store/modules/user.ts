@@ -1,7 +1,6 @@
-
 export interface IUserState {
-  role: number,
-  email: string
+  role: number;
+  email: string;
 }
 
 export default {
@@ -11,5 +10,5 @@ export default {
   }),
   mutations: {},
   getters: {},
-  actions: {},
+  actions: {}
 };

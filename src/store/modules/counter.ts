@@ -28,7 +28,7 @@ const counterModule = {
       const answer = await res.json();
       context.commit("setAnswer", answer.answer);
     }
-  },
-}
+  }
+};
 
 export default counterModule;

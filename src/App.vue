@@ -1,20 +1,18 @@
 <template lang="pug">
-Header
-main
+AppLayout
   router-view
 </template>
 
-<script setup>
-import Header from "@/layout/Header.vue";
+<script lang="ts">
+import {defineComponent} from "vue";
+import AppLayout from "./layout/AppLayout.vue";
 
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
+export default defineComponent({
+  name: "App",
+  components: {
+    AppLayout
+  }
+});
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-</style>
+<style lang="scss" scoped></style>

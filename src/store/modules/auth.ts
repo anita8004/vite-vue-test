@@ -1,13 +1,12 @@
-
 export interface IAuthState {
   token: string;
 }
 
 export default {
   state: () => ({
-    token: "jkwefhfufh",
+    token: "jkwefhfufh"
   }),
   mutations: {},
   getters: {},
-  actions: {},
+  actions: {}
 };

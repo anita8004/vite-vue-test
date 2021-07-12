@@ -1,6 +1,4 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Home from "../views/Home.vue";
-import About from "../views/About.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "",
@@ -11,12 +9,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/home",
     name: "Home",
-    component: Home
+    component: () => import("@/views/Home.vue")
   },
   {
     path: "/about",
     name: "About",
-    component: About
+    component: () => import("@/views/About.vue")
   },
   {
     path: "/:currentPath(.*)*", // 路由未匹配到，进入这个
