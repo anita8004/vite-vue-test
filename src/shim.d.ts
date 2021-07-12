@@ -14,3 +14,7 @@ declare module "*.png" {
   const content: any;
   export default content;
 }
+
+declare module 'vuetify/lib' {
+  import 'vuetify/types/lib'
+}

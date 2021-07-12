@@ -4,6 +4,7 @@ import { createVuetify } from "vuetify";
 import * as components from "vuetify/lib/components";
 import * as directives from "vuetify/lib/directives";
 import "material-design-icons-iconfont/dist/material-design-icons.css";
+// @ts-ignore
 import { aliases, md } from "vuetify/lib/iconsets/md";
 
 export default createVuetify({
