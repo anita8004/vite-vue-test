@@ -1,6 +1,7 @@
 {
-  "name": "vite-app",
+  "name": "vite-vue-test",
   "version": "0.0.0",
+  "author": "Anita",
   "scripts": {
     "serve": "vite preview",
     "build": "vite build",

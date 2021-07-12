@@ -1,6 +1,6 @@
 {
-  "appId": "com.example.app",
-  "appName": "scoremob2-vue",
+  "appId": "com.anita.viteVueTest",
+  "appName": "vite-vue-test",
   "webDir": "dist",
   "bundledWebRuntime": false
 }
