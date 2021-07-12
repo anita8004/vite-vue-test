@@ -3,7 +3,7 @@ header
   .header--fixed
     .container
       h1
-        router-link(to="/home") Logo
+        router-link(to="/home") Game
 </template>
 
 <script lang="ts" setup>
