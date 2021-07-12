@@ -17,6 +17,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/About.vue")
   },
   {
+    path: "/game/:gameName",
+    name: "Game",
+    props: true,
+    component: () => import("@/views/Game.vue")
+  },
+  {
     path: "/:currentPath(.*)*", // 路由未匹配到，进入这个
     redirect: _ => {
       return { path: "/404" };

@@ -19,10 +19,10 @@ MainLayout
               cover
             )
           v-card-text.flex-grow-1
-            v-card-title Game {{item}}
+            v-card-title BowGame
             v-card-subtitle Lorem ipsum dolor sit amet, aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
             v-card-actions.justify-end
-              v-btn VIEW
+              v-btn(@click="$router.push('/game/bowGame')") VIEW
 </template>
 
 <script lang="ts">

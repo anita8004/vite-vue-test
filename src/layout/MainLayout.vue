@@ -1,6 +1,7 @@
 <template lang="pug">
 v-app-bar(density="compact")
-  v-app-bar-title.mr-3 Game
+  v-app-bar-title.mr-3
+    router-link.logoLink.text-decoration-none(to="/") Game
   v-btn(text @click="aboutUrl") About
   v-spacer
   v-btn(
@@ -32,4 +33,8 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.logoLink {
+  color: inherit;
+}
+</style>

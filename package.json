@@ -40,6 +40,7 @@
     "tailwindcss": "^2.1.2",
     "vite": "^2.3.0",
     "vite-svg-loader": "^1.5.1",
-    "vue-cli-plugin-vuetify": "~2.4.1"
+    "vue-cli-plugin-vuetify": "~2.4.1",
+    "vue-friendly-iframe": "^0.20.0"
   }
 }

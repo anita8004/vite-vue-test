@@ -5,8 +5,8 @@ import router from "./router";
 import { store, key } from "./store";
 
 const app = createApp(App);
-app.use(vuetify);
 app.use(router);
 app.use(store, key);
+app.use(vuetify);
 
 app.mount("#app");

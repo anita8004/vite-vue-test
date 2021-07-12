@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>jquery射箭小游戏源码 www.bootstrapmb.com</title>
+</head>
+<body style="">
+    <div class="grid" id="grid" style="-webkit-transform: scale(0.928125, 0.928125);">
+        <div class="page" id="index">
+            <img class="logo" src="images/logo.png" alt="亡命射箭">
+            <img class="start" id="btn-start" src="images/start.png">
+            <!-- <img class="start" id="btn-more2" src="wmsj/more.png"> -->
+            <div style="clear:both"></div>
+            <img class="copyright" src="images/boyaa.png">
+        </div>
+        <div class="page" id="game">
+            <div class="view-wrap">
+                <div id="apple" class="apple"></div>
+                <div id="score"></div>
+                <div class="people"></div>
+                <div class="bow"></div>
+                <div class="arrow" style="bottom: 80px;"></div>
+                <div class="bar">
+                    <div class="progress" style="height: 0px;">
+                    </div>
+                    <div class="barLifes" style="height: 120px; bottom: 165px;">
+                    </div>
+                </div>
+            </div>
+            <div id="control">
+            </div>
+        </div>
+        <div class="page hide" id="gameover">
+            <div class="info hide">
+            </div>
+            <div class="myfail fail-one hide"></div>
+            <div class="myfail fail-two hide"></div>
+            <div class="myfail fail-three hide"></div>
+
+            <div class="btn-wrap">
+                <div class="btn" id="btn-restart"></div>
+                <div class="btn" id="btn-share"></div>
+                <!-- <div class="btn" id="btn-more"></div> -->
+            </div>
+        </div>
+        <div class="page hide" id="jd"></div>
+    </div>
+    <!-- 点击炫耀 -->
+    <div class="rong hide">
+        <div class="rongbox">
+            <div class="rongimg">
+                <img src="images/rongyu.gif" alt="">
+                <div class="rongtext">
+                    <span>您</span>
+                    <span>学</span>
+                    <span>废</span>
+                    <span>了</span>
+                    <span>吗</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- js files start -->
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        var maxWidth = 640, maxHeight = 960;
+        var currWidth = document.body.clientWidth;
+        var currHeight = document.body.clientHeight;
+        var scale = Math.min(currWidth / maxWidth, currHeight / maxHeight); //固定比率 变尺寸
+        $("#grid").css({
+            "-webkit-transform": "scale(" + scale + "," + scale + ")",
+            "-moz-transform": "scale(" + scale + "," + scale + ")",
+            "transform": "scale(" + scale + "," + scale + ")"
+        });
+
+    </script>
+    <script src="js/bar.js"></script>
+</body>
+</html>
