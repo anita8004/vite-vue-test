@@ -10,12 +10,13 @@ MainLayout
   v-container
     .game-list
       v-card.game-item(v-for="item in 3" :key="item")
-        .d-flex.justify-lg-space-between
-          div(:style="{width: '200px', height: '200px'}")
+        .d-sm-flex.justify-lg-space-between
+          div(:style="{width: smAndUp ? '200px' : '100%', height: '200px'}")
             v-img(
               :height="200"
-              :width="200"
-              src="https://fakeimg.pl/300/"
+              :width="smAndUp ? 200 : '100%'"
+              src="https://fakeimg.pl/600/"
+              cover
             )
           v-card-text.flex-grow-1
             v-card-title Game {{item}}
@@ -25,9 +26,10 @@ MainLayout
 </template>
 
 <script lang="ts">
-import {defineComponent} from "vue";
+import {defineComponent, onMounted} from "vue";
 import MainLayout from "@/layout/MainLayout.vue";
 import {useStore} from "@/store";
+import { useDisplay } from "vuetify/lib/composables/display";
 
 export default defineComponent({
   name: "Home",
@@ -36,6 +38,8 @@ export default defineComponent({
   },
   setup() {
     const store = useStore();
+
+    const { smAndUp } = useDisplay();
 
     const setDark = () => {
       store.commit("changeTheme", "dark")
@@ -47,7 +51,8 @@ export default defineComponent({
 
     return {
       setDark,
-      setLight
+      setLight,
+      smAndUp
     }
   }
 });
