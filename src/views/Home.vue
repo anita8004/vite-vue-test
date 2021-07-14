@@ -30,6 +30,7 @@ import {defineComponent, onMounted} from "vue";
 import MainLayout from "@/layout/MainLayout.vue";
 import {useStore} from "@/store";
 import { useDisplay } from "vuetify/lib/composables/display";
+import { StatusBar, Style } from '@capacitor/status-bar';
 
 export default defineComponent({
   name: "Home",
@@ -41,12 +42,14 @@ export default defineComponent({
 
     const { smAndUp } = useDisplay();
 
-    const setDark = () => {
-      store.commit("changeTheme", "dark")
+    const setDark = async () => {
+      await store.commit("changeTheme", "dark");
+      await StatusBar.setStyle({ style: Style.Dark });
     }
 
-    const setLight = () => {
-      store.commit("changeTheme", "light")
+    const setLight = async () => {
+      await store.commit("changeTheme", "light");
+      await StatusBar.setStyle({ style: Style.Light });
     }
 
     return {

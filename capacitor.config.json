@@ -2,5 +2,5 @@
   "appId": "com.anita.viteVueTest",
   "appName": "vite-vue-test",
   "webDir": "dist",
-  "bundledWebRuntime": false
+  "bundledWebRuntime": true
 }

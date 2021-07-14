@@ -1,4 +1,5 @@
 <template lang="pug">
+.status-bar
 v-app-bar(density="compact")
   v-app-bar-title.mr-3
     router-link.logoLink.text-decoration-none(to="/") Game
@@ -12,7 +13,7 @@ v-main
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import {defineComponent} from "vue";
 import {useRouter} from "vue-router";
 
 export default defineComponent({

@@ -80,6 +80,11 @@
   resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-3.1.1.tgz#aec035e78a0586c60053a19c06397b794c4fbc7b"
   integrity sha512-T8HWF2QNhMPb8EjO3Fn6Gmxg7llDPdb8K4mDe977Ufxq0WFuwlQw+VbSDzVXCHhkd2askyDCbpVUh5npONVwTQ==
 
+"@capacitor/status-bar@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@capacitor/status-bar/-/status-bar-1.0.2.tgz#b432403bab8ff5dc4b4f013c35aa1f85cc0651c8"
+  integrity sha512-NgAZIw8Uq2lm6Ln1lWipAqi/YxqIDd92boO4k81Z1WMOdZJt6oLxZB8LfJRDLXU7xNkpW97zHcNBf5pIXJIFqw==
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"

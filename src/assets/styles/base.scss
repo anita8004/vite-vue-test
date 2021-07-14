@@ -1,0 +1,100 @@
+.v-navigation-drawer {
+  top: env(safe-area-inset-top) !important;
+  left: env(safe-area-inset-left) !important;
+}
+
+.v-app-bar {
+  top: env(safe-area-inset-top) !important;
+  left: env(safe-area-inset-left) !important;
+}
+
+.v-bottom-navigation {
+  bottom: env(safe-area-inset-bottom) !important;
+  margin-bottom: env(safe-area-inset-bottom) !important;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-
+  bottom) env(safe-area-inset-left) !important;
+}
+
+.v-dialog {
+  bottom: env(safe-area-inset-bottom) !important;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-
+  bottom) env(safe-area-inset-left) !important;
+  height: auto !important;
+}
+
+
+#app {
+  bottom: env(safe-area-inset-bottom) !important;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-
+  bottom) env(safe-area-inset-left) !important;
+}
+
+body
+{
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);//为导航栏+状态栏的高度 88px
+  padding-left: constant(safe-area-inset-left);
+  padding-left: env(safe-area-inset-left); //如果未竖屏时为0
+  padding-right: constant(safe-area-inset-right);//如果未竖屏时为0
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: constant(safe-area-inset-bottom);//距离底部圆弧的距离34px
+  padding-bottom:  env(safe-area-inset-bottom);
+}
+
+
+//iphone X
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .fixed-footer{
+    bottom: constant(safe-area-inset-bottom);
+    bottom:  env(safe-area-inset-bottom);
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: constant(safe-area-inset-bottom);
+    height: env(safe-area-inset-bottom);
+    background-color: #fff;
+  }
+}
+//iphone Xs Max
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio:3) {
+  .fixed-footer{
+    bottom:  constant(safe-area-inset-bottom);
+    bottom: env(safe-area-inset-bottom);
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: constant(safe-area-inset-bottom);
+    height:  env(safe-area-inset-bottom);
+    background-color: #fff;
+  }
+}
+//iphone XR
+@media only screen and (device-width: 414px) and (device-height:     896px) and (-webkit-device-pixel-ratio:2) {
+  .fixed-footer{
+    bottom: constant(safe-area-inset-bottom);
+    bottom: env(safe-area-inset-bottom);
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:  constant(safe-area-inset-bottom);
+    height:  env(safe-area-inset-bottom);
+    background-color: #fff;
+  }
+}
+
+.status-bar {
+  width: 100%;
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top);
+  background-color: rgb(var(--v-theme-surface));
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}

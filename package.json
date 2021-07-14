@@ -13,6 +13,7 @@
     "@capacitor/cli": "^3.1.1",
     "@capacitor/core": "^3.1.1",
     "@capacitor/ios": "^3.1.1",
+    "@capacitor/status-bar": "^1.0.2",
     "@mdi/font": "5.9.55",
     "axios": "^0.21.1",
     "es6-promise": "^4.2.8",
